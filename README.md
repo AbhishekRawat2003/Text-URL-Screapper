@@ -76,9 +76,9 @@ bookmark-app/
 
 ### 1. Clone the Repo
 
-```bash
+```bash```
 git clone https://github.com/yourusername/bookmark-app.git
-cd bookmark-app
+cd bookmark-app```
 
 ---
 
@@ -139,5 +139,7 @@ Here are planned features for future versions:
 
 This project is licensed under the **MIT License**.
 
+
+
 > “Productivity is never an accident. It is always the result of a commitment to excellence, intelligent planning, and focused effort.”
-"""
+
