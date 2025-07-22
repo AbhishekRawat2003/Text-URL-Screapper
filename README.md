@@ -98,6 +98,20 @@ Here are planned features for future versions:
 - 👨‍💻 UI polishing, summarizer integration, and testing took another ~4–5 hours.
 
 ---
+### 🖼️ Screenshots
+
+#### 🔐 Signup Page
+![Signup](https://github.com/AbhishekRawat2003/Text-URL-Screapper/raw/a129b250ba0f1d2868a0bb82a420590e49520615/sigup.png)
+
+#### 🔑 Login Page
+![Login](https://github.com/AbhishekRawat2003/Text-URL-Screapper/raw/a129b250ba0f1d2868a0bb82a420590e49520615/login.png)
+
+#### 🌙 Dashboard (Dark Mode)
+![Dark Dashboard](https://github.com/AbhishekRawat2003/Text-URL-Screapper/raw/a129b250ba0f1d2868a0bb82a420590e49520615/dashdark.png)
+
+#### ☀️ Dashboard (Light Mode)
+![Light Dashboard](https://github.com/AbhishekRawat2003/Text-URL-Screapper/raw/a129b250ba0f1d2868a0bb82a420590e49520615/dash1.png)
+
 
 ## 👨‍💻 Author
 
