@@ -1,74 +1,38 @@
-# 🔖 AI-Powered Bookmark Saver
+# 🔖 Smart Bookmark Saver with AI Summarizer
 
-A modern, minimal, and intelligent web application that helps users **save, organize, and summarize web bookmarks**. Built with **Next.js**, **Firebase**, and **Tailwind CSS**, this tool leverages metadata extraction and (optionally) AI summarization to make bookmark management productive and intuitive.
-
----
-
-## 🎯 Project Objective
-
-The goal of this project is to **enhance how users collect and recall useful links** by:
-- Instantly extracting metadata (title, favicon, and description) from URLs.
-- (Optionally) Generating AI-powered summaries for web pages via the [Jina AI API](https://jina.ai/).
-- Providing secure, user-specific storage and login using Firebase Authentication.
-- Delivering a beautiful, responsive UI with a modern glassmorphism theme.
+A modern full-stack web app to **save bookmarks**, fetch metadata like **title, favicon**, and generate a smart **AI-powered summary** of the page using the Jina API. Authenticated users can access their own dashboard, manage their saved bookmarks, and enhance productivity by storing web insights instantly.
 
 ---
 
-## 🧠 Key Features
+## ✨ Features
 
-✅ **Secure Authentication**  
-– Only registered users can access bookmarks (Firebase Email/Password Auth)
-
-📥 **Smart URL Parsing**  
-– Automatically fetches and saves title, favicon, and Open Graph description.
-
-🧠 **AI-Powered Summarization** *(Optional)*  
-– Integrates with Jina AI’s summarizer to generate quick insights from pages.
-
-🧾 **Real-time Sync with Firestore**  
-– Bookmarks are user-specific and persist securely in the cloud.
-
-🎨 **Beautiful Glassmorphic UI**  
-– Fully responsive and built with Tailwind CSS.
-
-📦 **Modular Codebase**  
-– Clean and scalable folder structure using Next.js best practices.
+- 🔐 User Authentication (Firebase Auth)
+- 🌐 Save Bookmarks with Title, URL, and Favicon
+- 🧠 Auto-generated AI Summary (Jina AI API)
+- 📄 Beautiful Dashboard with Individual Bookmark Cards
+- ☁️ Data Persistence with Firebase Firestore
+- 🔒 Secure API endpoints (server-side only)
 
 ---
 
-## 🛠️ Tech Stack
+## 📁 Project Structure
 
-| Category        | Tools / Libraries                                 |
-|----------------|----------------------------------------------------|
-| Frontend       | [Next.js](https://nextjs.org/), React, TypeScript  |
-| Styling        | [Tailwind CSS](https://tailwindcss.com/)           |
-| Auth & DB      | Firebase Authentication + Firestore                |
-| Backend        | API Routes in Next.js, Firebase Admin SDK          |
-| Metadata Fetch | `jsdom`, `node-fetch`, OpenGraph scraping          |
-| AI Summary     | [Jina AI Open API](https://jina.ai) *(Optional)*   |
-| Hosting        | Vercel (Recommended)                               |
-
----
-
-## 📁 Folder Structure
-
+```
 bookmark-app/
 ├── pages/
-│ ├── index.tsx # Home page to add bookmarks
-│ ├── dashboard.tsx # Displays saved bookmarks
-│ └── api/
-│ └── bookmark.js # API route to extract metadata
+│   ├── index.tsx              # Home page to add bookmarks
+│   ├── dashboard.tsx          # Displays saved bookmarks
+│   └── api/
+│       └── bookmark.js        # API route to extract metadata
 ├── components/
-│ └── BookmarkCard.tsx # Reusable UI card for each bookmark
+│   └── BookmarkCard.tsx       # Reusable UI card for each bookmark
 ├── lib/
-│ └── firebase.ts # Firebase client setup
+│   └── firebase.ts            # Firebase client setup
 ├── styles/
-│ └── globals.css # Tailwind global styles
-├── .env.local # Firebase & Jina API keys (not committed)
-└── README.md # Project documentation
-
-
-
+│   └── globals.css            # Tailwind global styles
+├── .env.local                 # Firebase & Jina API keys (not committed)
+└── README.md                  # Project documentation
+```
 
 ---
 
@@ -76,14 +40,22 @@ bookmark-app/
 
 ### 1. Clone the Repo
 
-```bash```
+```bash
 git clone https://github.com/yourusername/bookmark-app.git
-cd bookmark-app```
+cd bookmark-app
+```
 
----
+### 2. Install Dependencies
 
-### create .env file
+```bash
+npm install
+```
 
+### 3. Create `.env.local` File
+
+Create a `.env.local` file in the root and add your config:
+
+```env
 NEXT_PUBLIC_FIREBASE_API_KEY=your_api_key
 NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=your_auth_domain
 NEXT_PUBLIC_FIREBASE_PROJECT_ID=your_project_id
@@ -95,7 +67,7 @@ FIREBASE_ADMIN_PROJECT_ID=your_project_id
 FIREBASE_ADMIN_CLIENT_EMAIL=your_service_account_email
 FIREBASE_ADMIN_PRIVATE_KEY="your_private_key"
 JINA_API_ENDPOINT=https://api.jina.ai/...
-
+```
 
 ---
 
@@ -131,7 +103,7 @@ Here are planned features for future versions:
 
 **Abhishek Rawat**
 
-🔗 [GitHub](https://github.com/) • [LinkedIn](https://linkedin.com/) • [Portfolio](https://)
+🔗 [GitHub](https://github.com/) • [LinkedIn](https://www.linkedin.com/in/abhishekrawat2003/) • [Portfolio](https://aportifybhishek.netlify.app/)
 
 ---
 
@@ -139,7 +111,4 @@ Here are planned features for future versions:
 
 This project is licensed under the **MIT License**.
 
-
-
 > “Productivity is never an accident. It is always the result of a commitment to excellence, intelligent planning, and focused effort.”
-
